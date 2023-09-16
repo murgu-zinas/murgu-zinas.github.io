@@ -1,6 +1,14 @@
+* {
+  font-family: sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
+}
+
+div.page1 > div.content {
+  position: absolute;
 }
 
 ul.pages {
@@ -8,7 +16,6 @@ ul.pages {
   margin: 0;
   padding: 0;
   display: block;
-  background-color: black;
 }
 
 
@@ -16,15 +23,24 @@ ul.pages > li {
   display: inline;
 }
 
-ul.pages > li > a {
-  display: block;
-  padding: 16px;
-  background-color: black;
+ul.pages > li > a.page {
+  margin: 39px 12px;
   float: right;
+  text-decoration: none;
+  color: white
 }
 
-ul.pages > img.logo {
-  height: 12pt;
-  width: 12pt;
-  padding: 16px;
+ul.pages > li > a.logo > img {
+  height: 48px;
+  width: 48px;
+  padding: 24px;
+}
+
+div.page1 {
+  position: relative;
+}
+
+div.page1 > img.background {
+  position: absolute;
+  width: 100vw;
 }
